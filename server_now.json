@@ -1,0 +1,16 @@
+{
+  "name": "twitter2.0-api",
+  "version": 2,
+  "builds": [
+    {
+      "src": "server_index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "server_index.js" }
+  ],
+  "env": {
+    "MONGO_URI": "@twitterer2.0-db"
+  }
+}
