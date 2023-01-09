@@ -114,4 +114,4 @@ function listAllTweets(reset = true) {
       }
       loading = false;
     });
-}
+  }
